@@ -4,6 +4,7 @@ from zoo_data.items import ZooDataItem
 #needed to use (scrapy startproject bestbuy) in shell to initialize these files in the cd we were in the cmd we called
 #(scrapy shell "<url_to_scrape>")
 #to crawl in shell, (scrapy crawl 'zoodata_spider') -name we designate below
+#fetch to:  fetch('https://en.wikipedia.org/wiki/Abilene_Zoological_Gardens')
 
 class ZooDataSpider( scrapy.Spider ):
     name = 'zoodata_spider'
@@ -38,12 +39,9 @@ class ZooDataSpider( scrapy.Spider ):
 
     def parse_zoo_path(self,response):            
 
-        #response_url = response.url #response_url = response.meta['name_url']
-
-        #for url in response_url:
             #print(name_url)
-            num_species = response.xpath('//table(@class = "infobox vcard")//td[contains(@abbr," of species")]/text()')
-            num_animals = response.xpath('//table(@class = "infobox vcard")//td[contains(@abbr," of animals")]/text()')
+            num_species = response.xpath('//table[@class = "infobox vcard"]/tbody//th/abbr//parent::th//following-sibling::td/text()').extract_first()    
+            num_animals = response.xpath('//table[@class = "infobox vcard"]/tbody//th/abbr//parent::th//following-sibling::td/text()').extract_first()    
 
             item = ZooDataItem()
             item['name'] = response.meta['name']
