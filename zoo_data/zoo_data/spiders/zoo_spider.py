@@ -25,7 +25,7 @@ class ZooDataSpider( scrapy.Spider ):
                 address = zoo.xpath('./td[2]/text()').extract_first()
                 city = zoo.xpath('./td[3]/a/text()').extract_first()
                 state = zoo.xpath('./td[4]/a/text()').extract_first() 
-                country = zoo.xpath('td[4]/a[2]/text()').extract_first()
+                country = zoo.xpath('./td[4]/a[2]/text()').extract_first()
 
                 item = {}
                 item['name'] = name
@@ -34,12 +34,18 @@ class ZooDataSpider( scrapy.Spider ):
                 item['state'] = state
                 item['country'] = country
                 item['name_url'] = name_url
+               # yield scrapy.Request(name_url, self.parse_zoo_path, meta=item)
                 yield scrapy.Request(name_url, self.parse_zoo_path, meta=item)
+
 
     def parse_zoo_path(self,response):            
 
-            #print(name_url)
-            num_species = response.xpath('//table[@class = "infobox vcard"]/tbody//th/abbr//parent::th//following-sibling::td/text()').extract_first()    
+            #print(name_url, '-'*80)
+            num_species = response.xpath('//table[@class = "infobox vcard"]/tbody//th/abbr/parent::th/parent::tr//td/text()').extract()
+            # if not num_species:
+            #     pass
+            # else:
+            #     num_species = num_species[1]
             num_animals = response.xpath('//table[@class = "infobox vcard"]/tbody//th/abbr//parent::th//following-sibling::td/text()').extract_first()    
 
             item = ZooDataItem()
