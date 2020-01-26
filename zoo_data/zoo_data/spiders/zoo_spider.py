@@ -41,7 +41,7 @@ class ZooDataSpider( scrapy.Spider ):
     def parse_zoo_path(self,response):            
 
             #print(name_url, '-'*80)
-            num_species = response.xpath('//table[@class = "infobox vcard"]/tbody//th/abbr/parent::th/parent::tr//td/text()').extract()
+            num_species = response.xpath('(//table[@class = "infobox vcard"]/tbody//th/abbr/parent::th/parent::tr/td)[2]/text()').extract()
             # if not num_species:
             #     pass
             # else:

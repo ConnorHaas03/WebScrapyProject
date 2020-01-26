@@ -15,3 +15,4 @@ class CountryDataItem(scrapy.Item):
     pop_2018 = scrapy.Field()
     city_2016_land_area = scrapy.Field()
     pop_density = scrapy.Field()
+    state_name = scrapy.Field()

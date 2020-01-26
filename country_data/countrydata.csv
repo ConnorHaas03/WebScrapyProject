@@ -1,4 +1,4 @@
-city_2016_land_area,city_name,pop_2018,pop_density
+city_2016_land_area,city_name,pop_2018,pop_density,state_name
 "301.5 sq mi
 ,468.7 sq mi
 ,227.3 sq mi
@@ -941,6 +941,320 @@ city_2016_land_area,city_name,pop_2018,pop_density
 ,1,681/sq mi
 ,3,577/sq mi
 ,3,449/sq mi
+","New York,
+,California,
+,Illinois,
+,Texas,
+,Arizona,
+,Pennsylvania,
+,Texas
+,California
+,Texas
+,California
+,Texas
+,Florida,
+,Texas
+,Ohio,
+,California
+,North Carolina,
+,Indiana,
+,Washington,
+,Colorado,
+,District of Columbia,
+,Massachusetts,
+,Texas
+,Michigan,
+,Tennessee,
+,Oregon,
+,Tennessee
+,Oklahoma,
+,Nevada,
+,Kentucky,
+,Maryland,
+,Wisconsin,
+,New Mexico,
+,Arizona
+,California
+,Arizona
+,California
+,Georgia,
+,Missouri,
+,Colorado
+,Florida
+,North Carolina
+,Nebraska,
+,California
+,Virginia,
+,California
+,Minnesota,
+,Oklahoma
+,Texas
+,Florida
+,Louisiana,
+,Kansas,
+,Ohio
+,California
+,Colorado
+,California
+,Hawaii,
+,California
+,California
+,Texas
+,Kentucky
+,California
+,Nevada
+,Minnesota
+,Missouri
+,Ohio
+,Pennsylvania
+,North Carolina
+,Alaska,
+,Texas
+,Nebraska
+,Florida
+,California
+,New Jersey,
+,Ohio
+,North Carolina
+,California
+,Indiana
+,New Jersey
+,Florida
+,Texas
+,Wisconsin
+,Arizona
+,New York
+,Texas
+,Arizona
+,Nevada
+,Arizona
+,Arizona
+,North Carolina
+,Nevada
+,Virginia
+,Virginia
+,Texas
+,Texas
+,Florida
+,California
+,Idaho,
+,Virginia
+,Louisiana
+,Washington
+,Iowa,
+,Washington
+,California
+,California
+,California
+,California
+,Alabama,
+,California
+,North Carolina
+,California
+,New York
+,California
+,California
+,Utah,
+,Michigan
+,Texas
+,New York
+,Illinois
+,Alabama
+,Ohio
+,Arkansas,
+,Alabama
+,Georgia
+,Florida
+,Texas
+,Georgia
+,Florida
+,Kansas
+,Arizona
+,Texas
+,Alabama
+,Florida
+,Louisiana
+,Texas
+,Tennessee
+,Massachusetts
+,Texas
+,Washington
+,Florida
+,South Dakota,
+,California
+,Tennessee
+,Rhode Island,
+,Virginia
+,California
+,California
+,California
+,Oregon
+,California
+,California
+,Florida
+,Arizona
+,Oregon
+,California
+,North Carolina
+,Missouri
+,Colorado
+,Mississippi,
+,Virginia
+,California
+,California
+,Colorado
+,Tennessee
+,California
+,California
+,Massachusetts
+,Florida
+,Texas
+,California
+,Georgia
+,Kansas
+,California
+,California
+,Texas
+,Illinois
+,Illinois
+,Washington
+,Illinois
+,Georgia
+,New Jersey
+,California
+,Connecticut,
+,Texas
+,Texas
+,New York
+,Texas
+,California
+,Tennessee
+,Florida
+,Ohio
+,California
+,Kansas
+,California
+,Colorado
+,California
+,Texas
+,Texas
+,Arizona
+,Texas
+,Utah
+,South Carolina,
+,Michigan
+,Virginia
+,Florida
+,California
+,Florida
+,South Carolina
+,Iowa
+,Michigan
+,Connecticut
+,Connecticut
+,California
+,Washington
+,California
+,New Jersey
+,Texas
+,California
+,Louisiana
+,Georgia
+,Kansas
+,California
+,North Dakota,
+,Oklahoma
+,Missouri
+,Texas
+,North Carolina
+,Connecticut
+,California
+,Texas
+,California
+,Michigan
+,California
+,Pennsylvania
+,Texas
+,Texas
+,Colorado
+,Massachusetts
+,Texas
+,Texas
+,Michigan
+,Indiana
+,Minnesota
+,Missouri
+,California
+,Utah
+,Florida
+,Texas
+,Utah
+,California
+,California
+,California
+,California
+,Illinois
+,Florida
+,California
+,Colorado
+,South Carolina
+,Florida
+,New Hampshire,
+,North Carolina
+,California
+,California
+,Florida
+,Colorado
+,Illinois
+,Massachusetts
+,California
+,Florida
+,Illinois
+,Washington
+,California
+,Colorado
+,Florida
+,Oregon
+,California
+,Montana,
+,California
+,Oklahoma
+,Georgia
+,California
+,Oregon
+,Connecticut
+,California
+,Colorado
+,Colorado
+,California
+,Idaho
+,Texas
+,Florida
+,California
+,Texas
+,Texas
+,California
+,California
+,Wisconsin
+,Texas
+,Nevada
+,New Jersey
+,California
+,California
+,Texas
+,California
+,New Mexico
+,Washington
+,Iowa
+,Indiana
+,California
+,Alabama
+,Michigan
+,New Jersey
+,New Jersey
+,Texas
+,Wisconsin
+,California
 "
 "102.3 km,
 ,69.9 km,
@@ -957,7 +1271,7 @@ city_2016_land_area,city_name,pop_2018,pop_density
 ,2,881/km,
 ,1,771/km,
 ,4,590/km,
-"
+",
 "120.996 km,
 ,67.288 km,
 ,86.381 km,
@@ -982,7 +1296,7 @@ city_2016_land_area,city_name,pop_2018,pop_density
 ,6,558/km,
 ,900/km,
 ,1,207/km,
-"
+",
 "2.30% from 2000 to 2010
 ,annexed by , in 1907
 ,consolidated with , in 1898
@@ -1037,4 +1351,4 @@ city_2016_land_area,city_name,pop_2018,pop_density
 , (1930)
 , (1940)
 , (1930)
-",
+",,
