@@ -12,15 +12,15 @@ class CountryDataSpider( scrapy.Spider ):
 
     def parse(self, response):
 
-        countryTable = response.xpath('//table[contains(@class,"wikitable sortable")]')
+        countryTable = response.xpath('//table[contains(@class,"wikitable sortable")]//tbody')
 
         for country in countryTable:
-            print("entered for", '-'*50)
+            #print("entered for", '-'*50)
             #city_state = country.xpath('//tbody/tr/td//a/text()').extract()
-            city_name = country.xpath('.//tbody/tr/td[2]//a/text()').extract_first()
-            pop_2018 = country.xpath('.//tbody/tr/td[4]/text()').extract_first() 
-            city_2016_land_area = country.xpath('.//tbody/tr/td[7]/text()').extract_first()
-            pop_density = country.xpath('.//tbody/tr/td[9]/text()').extract_first()
+            city_name = country.xpath('.//tr/td[2]//a//text()').getall()
+            pop_2018 = country.xpath('.//tr/td[4]/text()').extract() 
+            city_2016_land_area = country.xpath('.//tr/td[7]/text()').extract()
+            pop_density = country.xpath('.//tr/td[9]/text()').extract()
 
             item2 = CountryDataItem()
             item2['city_name'] = city_name

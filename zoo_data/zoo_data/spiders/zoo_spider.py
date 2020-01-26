@@ -15,20 +15,19 @@ class ZooDataSpider( scrapy.Spider ):
         
         zooTable = response.xpath('//table[contains(@class,"wikitable sortable")]//tbody/tr')
 
-        #print(zooTable, '-'*50)
         for zoo in zooTable:
             name = zoo.xpath('./td[1]/a/text()').extract_first()
             if not name:
                 continue
             else:
-                #print(zoo.xpath('./td[1]/a/@href').extract_first(),'-'*80)
+
                 name_url = response.urljoin(zoo.xpath('./td[1]/a/@href').extract_first()) 
                 address = zoo.xpath('./td[2]/text()').extract_first()
                 city = zoo.xpath('./td[3]/a/text()').extract_first()
                 state = zoo.xpath('./td[4]/a/text()').extract_first() 
                 country = zoo.xpath('td[4]/a[2]/text()').extract_first()
 
-                item = {} #ZooDataItem()
+                item = {}
                 item['name'] = name
                 item['address'] = address
                 item['city'] = city
